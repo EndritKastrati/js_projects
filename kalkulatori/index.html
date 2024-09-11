@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulatori Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="kalkulatori">
+        <input id="rezultati" readonly>
+        <div id="elementet">
+            <button onclick="shtoPerTuShfaqur('+')" class="operatori">+</button>
+            <button onclick="shtoPerTuShfaqur('7')">7</button>
+            <button onclick="shtoPerTuShfaqur('8')">8</button>
+            <button onclick="shtoPerTuShfaqur('9')">9</button>
+            <button onclick="shtoPerTuShfaqur('-')" class="operatori">-</button>
+            <button onclick="shtoPerTuShfaqur('4')">4</button>
+            <button onclick="shtoPerTuShfaqur('5')">5</button>
+            <button onclick="shtoPerTuShfaqur('6')">6</button>
+            <button onclick="shtoPerTuShfaqur('*')" class="operatori">*</button>
+            <button onclick="shtoPerTuShfaqur('1')">1</button>
+            <button onclick="shtoPerTuShfaqur('2')">2</button>
+            <button onclick="shtoPerTuShfaqur('3')">3</button>
+            <button onclick="shtoPerTuShfaqur('/')" class="operatori">/</button>
+            <button onclick="shtoPerTuShfaqur('0')">0</button>
+            <button onclick="shtoPerTuShfaqur('.')">.</button>
+            <button onclick="kalkulo()">=</button>
+            <button onclick="pastro()" class="operatori">C</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
