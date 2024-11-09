@@ -12,6 +12,18 @@ let hrs = 0;
 let mins = 0;
 let secs = 0;
 
+
+startoBtn.addEventListener("click", () =>{
+    if(pauzuar){
+        pauzuar = false;
+        kohaFillo = Date.now() - kohaKaluar;
+        intervaliId = setInterval(perditsoKohen, 75);
+    }
+});
+
+
+
+
 function perditsoKohen(){
     
     kohaKaluar = Date.now() - kohaFillo;
