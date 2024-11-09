@@ -21,7 +21,26 @@ startoBtn.addEventListener("click", () =>{
     }
 });
 
+pauzoBtn.addEventListener("click", () =>{
+    if(!pauzuar){
+        pauzuar = true;
+        kohaKaluar = Date.now() - kohaFillo;
+        clearInterval(intervaliId);
+    }
+});
 
+ristartoBtn.addEventListener("click", () =>{
+    pauzuar = true;
+    clearInterval(intervaliId);
+    kohaFillo = 0;
+    kohaKaluar = 0;
+    kohaAktuale = 0;
+    hrs = 0;
+    mins = 0;
+    secs = 0;
+
+    kohaShfaqu.textContent = "00:00:00";
+});
 
 
 function perditsoKohen(){
