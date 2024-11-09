@@ -11,3 +11,22 @@ let intervaliId;
 let hrs = 0;
 let mins = 0;
 let secs = 0;
+
+function perditsoKohen(){
+    
+    kohaKaluar = Date.now() - kohaFillo;
+
+    secs = Math.floor((kohaKaluar / 1000) % 60);
+    mins = Math.floor((kohaKaluar / (1000 * 60)) % 60);
+    hrs = Math.floor((kohaKaluar / (1000 * 60 * 60)) % 60);
+
+    secs = pad(secs);
+    mins = pad(mins);
+    hrs = pad(hrs);
+
+    kohaShfaqu.textContent = `${hrs}:${mins}:${secs}`;
+
+    function pad(unit){
+        return(("0") + unit).length > 2 ? unit : "0" + unit;
+    }
+}
