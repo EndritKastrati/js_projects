@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .kohaBtn{
     width: 80px;
     height: 30px;
@@ -16,6 +20,7 @@
 }
 
 #koha{
+    margin-top: 50px;
     text-align: center;
     border: 3px solid;
     border-radius: 25px;
